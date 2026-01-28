@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MY HUB</string>
+    <string name="button">Button</string>
+
+    <string name="todo">TODO</string>
+    <string name="gopi_kumar">Gopi Kumar</string>
+    <string name="b_tech_cse_cybersecurity_learner">🎓 B.Tech CSE | 🔐 Cybersecurity Learner</string>
+    <string name="instagram">📷 Instagram</string>
+    <string name="snapchat">👻 Snapchat</string>
+    <string name="linkedin">💼 LinkedIn</string>
+    <string name="github">💻 GitHub</string>
+    <string name="youtube">▶️ YouTube</string>
+    <string name="learning_building_securing">🚀 Learning • Building • Securing</string>
+    <string name="twitter_x">𝕏 Twitter (X)</string>
+    <string name="my_hub">MY HUB</string>
+</resources>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    tools:context=".MainActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_gradient"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card_glass"
+                android:padding="25dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:ignore="UselessParent">
+
+                <TextView
+                    android:id="@+id/myHubText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/my_hub"
+                    android:textSize="38sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.2"
+                    android:layout_marginBottom="16dp"
+                    android:includeFontPadding="false"
+                    android:shadowColor="#8000F2FE"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="12"
+                    android:gravity="center"/>
+
+
+                <FrameLayout
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center">
+
+                    <!-- Glow circle (outer ring) -->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/avatar_glow"/>
+
+                    <!-- Profile image (inside circle) -->
+                    <ImageView
+                        android:id="@+id/profileImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:contentDescription="@string/todo"
+                        android:src="@drawable/prfile"
+                        android:scaleType="centerCrop"
+                        android:clipToOutline="true"
+                        android:outlineProvider="background"
+                        android:background="@drawable/circle_mask"
+                        tools:targetApi="31" />
+                </FrameLayout>
+
+
+
+
+
+                <TextView
+                    android:id="@+id/titleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gopi_kumar"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:includeFontPadding="false"
+                    android:lineSpacingExtra="0dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"/>
+
+                <TextView
+                    android:id="@+id/subTitleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/b_tech_cse_cybersecurity_learner"
+                    android:textColor="#DDFFFFFF"
+                    android:textSize="14sp"
+                    android:includeFontPadding="false"
+                    android:lineSpacingExtra="0dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"/>
+
+
+                <Button
+                    android:id="@+id/btnInstagram"
+                    style="@style/SocialButton"
+                    android:text="@string/instagram"/>
+
+                <Button
+                    android:id="@+id/btnSnapchat"
+                    style="@style/SocialButton"
+                    android:text="@string/snapchat"/>
+
+                <Button
+                    android:id="@+id/btnLinkedIn"
+                    style="@style/SocialButton"
+                    android:text="@string/linkedin"/>
+
+                <Button
+                    android:id="@+id/btnGitHub"
+                    style="@style/SocialButton"
+                    android:text="@string/github"/>
+
+                <Button
+                    android:id="@+id/btnYouTube"
+                    style="@style/SocialButton"
+                    android:text="@string/youtube"/>
+
+                <Button
+                    android:id="@+id/btnTwitter"
+                    style="@style/SocialButton"
+                    android:text="@string/twitter_x"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/learning_building_securing"
+                    android:textColor="#AAFFFFFF"
+                    android:textSize="12sp"
+                    android:layout_marginTop="20dp"
+                    android:includeFontPadding="false"
+                    android:lineSpacingExtra="0dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:gravity="center"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
