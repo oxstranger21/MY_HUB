@@ -30,25 +30,7 @@ public class MainActivity extends AppCompatActivity {
         btnGitHub    = findViewById(R.id.btnGitHub);
         btnYouTube   = findViewById(R.id.btnYouTube);
         btnTwitter   = findViewById(R.id.btnTwitter);
-        myHub = findViewById(R.id.myHubText);
 
-        myHub.post(() -> {
-            Shader textShader = new LinearGradient(
-                    0, 0,
-                    myHub.getWidth(), myHub.getTextSize(),
-                    new int[]{
-                            0xFF00F2FE,   // Cyan
-                            0xFF4FACFE,   // Blue
-                            0xFF43E97B,   // Green
-                            0xFFFA709A    // Pink
-                    },
-                    null,
-                    Shader.TileMode.CLAMP
-            );
-
-            myHub.getPaint().setShader(textShader);
-            myHub.invalidate();
-        });
 
 
         btnInstagram.setOnClickListener(v -> openLink("https://insta.openinapp.co/i6q63"));
